@@ -1,0 +1,225 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	 }
+
+body {
+	font-family: Montserrat, Arial;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #3f3b3b;
+}
+
+.container {
+	width: 1110px;
+
+	/* sayfada ortalamak icin */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main {
+	background-image: url(../img/hero/big-fat-juicy-cheese-burger-recipes.jpg);
+	background-position: top center;
+}
+
+.header {
+	font-size: 24px;
+	display: flex;
+	gap: 40px; /* ikonlarin arasinda bosluk birakmak icin */
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.header a {
+	color: #3f3b3b;
+}
+
+.logo {
+	flex-grow: 1;
+	text-align: center;
+	padding: 25px 0;
+}
+
+.hero {
+	display: flex;
+	height: 936px;
+	color: #fff;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero h2 {
+	font-size: 80px;
+	font-weight: bold;
+	line-height: 1.01;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.button {
+	color: #fff;
+	text-decoration: none;
+	font-size: 23px;
+	font-weight: 600;
+	line-height: 1.39;
+	background-color: #fb5858;
+	padding: 16px 55px;
+	border-radius: 6px;
+	display: inline-block; /* elementler arasi bosluk sorunlarini cozmek icin kullaniyoruz */
+}
+
+.promo {
+	padding: 100px 0; /* ikili yazildiginda soldaki deger ust ve alt, sagdaki deger sol ve sag */
+	display: flex;
+}
+
+.promo-content {
+	padding-top: 120px;
+}
+
+.promo-content h6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.71;
+	margin-bottom: 12px;
+}
+
+.promo-content h6 i {
+	color: #ff9138;
+}
+
+.promo-content h3 {
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 1.17;
+	letter-spacing: -0.7px;
+	margin-bottom: 24px;
+	border-radius: 6px;
+}
+.cook-content  {
+     width: 1110px;
+     height: 500px;
+     margin: 48px 0 0;
+     object-fit: contain;
+     display: flex;
+ }
+    
+.cook {
+   margin-right: auto;
+   width: 350px;
+   height: 344px;
+   background-color: rgba(216, 216, 216, 0);
+}
+img.Grid {
+  width: 1440px;
+  height: 500px;
+  margin: 48px 0 0;
+  object-fit: contain;
+}
+.cook-content h5{
+  width: 350px;
+  height: 60px;
+  margin: 16px 0 0;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f3b3b;
+}
+.h3 {
+  font-weight: bold;
+  font: bold;
+  color: #3f3b3b;
+}
+
+.button-btn-btn {
+	
+	color: #fff;
+	text-decoration: none;
+	font-size: 23px;
+	font-weight: 600;
+	line-height: 1.39;
+	background-color: #fb5858;
+	padding: 16px 55px;
+	border-radius: 6px;
+    }
+	.button-btn{
+	color: #fff;
+	text-decoration: none;
+	font-size: 23px;
+	font-weight: 600;
+	line-height: 1.39;
+	background-color: #fb5858;
+	padding: 16px 55px;
+	border-radius: 6px;
+	display: inline-block; 
+	}
+	.contact-content{
+	width: 1110px;
+	margin-left: auto;
+	margin-right: auto;
+
+	}
+	.contact{
+	width: 1110px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 378;
+	}
+	 .contactİmg{
+	 margin-top:  70px;;
+     width: 1110px;
+
+	}
+	.footer{
+	margin-top: 150pz;
+    width: 1110px;
+    height: 338px;
+    padding: 0 0 32.2px;
+    background-color: #efefef;
+}
+	
+  /* .link {
+  width: 26px;
+  height: 24px;
+  flex-grow: 0;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: right;
+  color: #3f3b3b; */
+
+.link {
+    display: flex;
+	align-items:flex-end;
+	margin-left: 26px;
+	line-height: 1.71;
+	gap: 40px
+
+}
+.logo2{
+	font-size: 24px;
+	display: flex;
+	gap: 40px; /* ikonlarin arasinda bosluk birakmak icin */
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.text-center {
+	text-align: center;
+}

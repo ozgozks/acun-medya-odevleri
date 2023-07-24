@@ -1,0 +1,384 @@
+:root {
+  /*------------ Color ------------*/
+  --color-gray: hsl(216, 11%, 74%);
+  /*------------ TextColor ------------*/
+  --text-white: hsl(0, 0%, 98%);
+  --text-black: hsl(0, 0%, 30%);
+  --text-gray: hsl(0, 0%, 70%);
+  --text-blue: hsl(208, 52%, 50%);
+  --text-yellow: hsl(40, 79%, 51%);
+  --text-green: hsl(85, 48%, 48%);
+  --text-red: hsl(0, 93%, 60%);
+  --text-purple: hsl(278, 74%, 40%);
+  /*------------ BackgroundColor ------------*/
+  --bg-white: hsl(0, 0%, 98%);
+  --bg-white-white: hsl(0, 0%, 100%);
+  --bg-blue-one: hsl(220, 22%, 33%);
+  --bg-blue-two: hsl(221, 21%, 40%);
+  --bg-blue-three: hsl(221, 21%, 41%);
+  --bg-blue-four: hsl(210, 29%, 24%);
+  --bg-light-blue: hsl(207, 100%, 90%);
+  /*------------ BorderColor ------------*/
+  --border-white: hsl(0, 0%, 98%);
+  --border-gray: hsl(220, 9%, 87%);
+}
+
+.fadeIn {
+  animation: fadeIn .5s linear;
+}
+
+.fadeOut {
+  animation: fadeOut .5s linear;
+}
+
+/* ------------ Animation ------------ */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+      width: 0;
+  }
+
+  100% {
+      width: 350px;
+  }
+}
+
+/* ------------ Global ------------ */
+
+body {
+  display: grid;
+  /* grid-template-columns: 170px 1fr 219px; */
+  grid-template-columns: 512px 1fr 440px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+/* ------------ Left Menu ------------ */
+
+nav {
+  grid-column: 1 / 2;
+  background-color: var(--bg-white);
+  transition-duration: 0.3s;
+  position: relative;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 15px;
+  height: 50px;
+  background: var(--bg-blue-one);
+}
+
+.nav-header i {
+  color: var(--text-white);
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.altProfile {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-black);
+  cursor: pointer;
+}
+
+.altProfile p {
+  margin-right: 10px;
+}
+
+.altProfile i {
+  color: var(--text-gray);
+}
+
+.pPicture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.pIcon {
+  color: var(--text-gray);
+  display: flex;
+  gap: 40px;
+}
+
+.pIcon i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.altMenu li {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  gap: 15px;
+  transition-duration: 0.2s;
+  transition-property: background, color;
+}
+
+.altMenu li:hover {
+  background: var(--bg-blue-two);
+  color: var(--text-white);
+  cursor: pointer;
+}
+
+.altMenu i {
+  font-size: 20px;
+}
+
+.altMenu li p:nth-child(3) {
+  margin-left: auto;
+}
+
+.altMenu li:nth-child(n) i {
+  color: var(--text-blue);
+}
+
+.altMenu li:nth-child(2n) i {
+  color: var(--text-yellow);
+}
+
+.altMenu li:nth-child(3n) i {
+  color: var(--text-green);
+}
+
+.altMenu li:nth-child(4n) i {
+  color: var(--text-red);
+}
+
+.altMenu li:nth-child(5n) i {
+  color: var(--text-purple);
+}
+
+.bottomMenu {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  gap: 20px;
+  background: var(--bg-blue-two);
+  color: var(--text-white);
+  font-weight: 500;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition-duration: 0.2s;
+  transition-property: background, color;
+}
+
+.bottomMenu:hover {
+  background: var(--bg-blue-four);
+
+  color: var(--text-blue);
+  cursor: pointer;
+}
+
+.bottomMenu i {
+  font-size: 20px;
+}
+
+/* ------------ Main ------------ */
+
+main {
+  background: var(--bg-blue-one);
+  grid-column: 2/4;
+  transition-duration: 0.3s;
+}
+
+.upMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 25px;
+  height: 50px;
+  background: var(--bg-blue-three);
+  color: var(--text-white);
+}
+
+.detail {
+  background: var(--bg-white);
+  border-left: 1px solid var(--border-gray);
+  width: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 2;
+  position: absolute;
+  transition-duration: 0.5s;
+}
+
+.detail.show {
+  animation: fadeIn .5s linear;
+  width: 350px;
+}
+
+.midMain {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 25px;
+  gap: 10px;
+}
+
+.addTodo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  background: var(--bg-blue-three);
+  color: var(--text-white);
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+.addTodo form {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.addTodo form i {
+  cursor: pointer;
+}
+
+.addTodo input {
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding-inline: 10px;
+  color: var(--text-white);
+}
+
+.addTodo input::placeholder {
+  color: var(--text-white);
+}
+
+.addTodo input:focus {
+  border: none;
+  outline: none;
+}
+
+.addTodo button {
+  background: transparent;
+  border: none;
+  color: var(--text-white);
+  cursor: pointer;
+}
+
+.todoList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.todoListElement {
+  display: flex;
+  align-items: center;
+  background: var(--bg-white);
+  transition-duration: .2s;
+  transition-property: background;
+  padding: 5px 15px;
+  border-radius: 3px;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+  /* standard syntax */
+  -webkit-user-select: none;
+  /* webkit (safari, chrome) browsers */
+  -moz-user-select: none;
+  /* mozilla browsers */
+  -khtml-user-select: none;
+  /* webkit (konqueror) browsers */
+  -ms-user-select: none;
+  /* IE10+ */
+}
+
+.todoListElement:hover {
+  background: hsl(207, 100%, 90%);
+}
+
+.todoListElement input {
+  width: 15px;
+  height: 15px;
+}
+
+.todoListElement p {
+  color: var(--text-blue);
+  font-weight: 500;
+}
+
+.todoListElement i:nth-child(3) {
+  margin-left: auto;
+}
+
+.todoListElement .pPicture {
+  width: 40px;
+  height: 40px;
+}
+
+/* ------------ 1140px ------------ */
+
+@media screen and (max-width: 1440px) {
+  body {
+      display: grid;
+      grid-template-columns: 384px 1fr 330px;
+  }
+}
+
+/* ------------ 1024px ------------ */
+
+@media screen and (max-width: 1024px) {
+  body {
+      display: grid;
+      grid-template-columns: 324px 1fr 280px;
+  }
+}
+
+/* ------------ 768px ------------ */
+
+@media screen and (max-width: 768px) {
+  body {
+      display: grid;
+      grid-template-columns: 206px 1fr 219px;
+  }
+}
+
+/* ------------ 425px ------------ */
+
+@media screen and (max-width: 425px) {
+  body {
+      display: grid;
+      grid-template-columns: 206px 1fr 219px;
+  }
+
+  nav {
+      grid-column: 1/2;
+      grid-row: 1/3;
+  }
+
+  main {
+      grid-column: 2/4;
+  }
+
+  .detail {
+      grid-column: 2/4;
+  }
+}

@@ -1,0 +1,129 @@
+/* Genel stiller */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 1330px; /* İstenilen genişlik */
+  height: 300px; /* İstenilen yükseklik */
+  object-fit: cover; /* Resmi boyutlarına sıkıştırarak kırpma */
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Header stilleri */
+header {
+  background-color: #ffcc00;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Hero bölümü stilleri */
+#hero {
+  background-image: url("hero-image.jpg"); /* Buraya arka plan olarak kullanmak istediğiniz fotoğrafın dosya yolunu ekleyin */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px;
+  color: #fff;
+}
+
+.button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Menü stilleri */
+#menu {
+  padding: 50px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.menu-item img {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.menu-item h3 {
+  margin: 0;
+}
+
+.price {
+  font-weight: bold;
+  margin-left: auto;
+}
+
+/* Rezervasyon stilleri */
+#reservation {
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input,
+textarea,
+button {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+
+/* Hakkımızda ve İletişim stilleri */
+#about,
+#contact {
+  padding: 50px;
+  background-color: #fff;
+}
+
+/* Footer stilleri */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
